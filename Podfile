@@ -12,5 +12,19 @@ pod'Firebase'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'GoogleSignIn'
-Pod 'alamofire'
+pod 'Alamofire'
+pod 'SwiftyJSON'
+pod 'SideMenu'
+pod 'PasswordTextField'
+pod 'JJFloatingActionButton'
+end
+swift_versions_of_pods = { 'swiftScan' => '4.0', 'GRDB.swift' => '4.2' }
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    defined_swift_version = swift_versions_of_pods[target.name]
+    next if defined_swift_version.blank?
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = defined_swift_version
+    end
+  end
 end

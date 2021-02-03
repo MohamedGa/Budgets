@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "593E9479C06FB200807D11AB29EB50BD"
+               BlueprintIdentifier = "EB63B9569C8BB36DF869DE2F65CFB031"
+               BuildableName = "FBSDKCoreKit.framework"
                BlueprintName = "FBSDKCoreKit"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "FBSDKCoreKit.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
